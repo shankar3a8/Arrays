@@ -3,8 +3,9 @@ public class ArrayDuplicateCount {
 
 	public static void main(String[] args) {
 		int[] a= {1,5,6,2,4,5,5,5,8,111,111,111,111,111};
-		int ct=1,ct1=0,b=0;
-		for(int i=0;i<a.length;i++)
+		int ct=1,ct1=0,b='o';
+		System.out.println(b);
+		for(int i=9;i<a.length;i++)
 		{
 			ct=1;
 			for(int j=i+1;j<a.length;j++)
@@ -16,18 +17,18 @@ public class ArrayDuplicateCount {
 				}	
 				
 			}
-			if(a[i]!='o')
+			if(a[i]!='o'  || a.length==i+1)
 			{
 				if(ct1<ct)
 				{
 					ct1=ct;
 					b=i;
 					//ct=1;
-					System.out.println(a[i]);
+					//System.out.println(a[i]);
 				}
 			}
 		}
-		System.out.println(ct1+"times"+a[b]);
+		//System.out.println(ct1+"times"+a[b]);
 	}
 }
 /*...............................other method...................................*/
