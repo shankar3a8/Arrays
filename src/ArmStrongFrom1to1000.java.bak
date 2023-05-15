@@ -75,7 +75,7 @@ public class ArmStrongFrom1to1000 {
 //				System.out.println(sum);
 				}
 				if(sum==a) {
-					b[count]=a;
+					b[ct]=a;
 					count++;
 				}
 //				sum=0;
